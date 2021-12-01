@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head class="head">
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+      <header class="page-header">
+        <a href="" class="page-header__logo"><img src="img/mobile-logo.svg" alt="Логотип седона">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a href="blank.html">
+                  главная
+                </a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a href="blank.html">
+                  фото видео
+                </a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a href="blank.html">
+                  форма отзыва
+                </a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a href="blank.html">
+                  html academy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+      </header>
+      <main class="page-main">
+        <div class="form-title">
+        <h1>Седона</h1>
+        <img src="img/background-img.jpg" width="1200" height="518" alt="горы">
+        <img src="img/sedona.svg" alt="седона">
+</div>
+<div class="form-text">
+  <h2>оставьте свой отзыв</h2>
+  <p>Оставьте свой отзывПомогите нашим отелям стать лучше! оставьте отзыв о них,а также о посещенных вами достопримечательностях</p>
+</div>
+<div class="main-form">
+  <form class="main-form__feedback-form" action="https://echo.htmlacademy.ru" method="post">
+    <div class="main-form__section">
+      <div class="main-form__full-name">
+      <label class="main-form__name" for="name">имя*:</label>
+        <label class="main-form__surname" for="surname">фамилия*:</label>
+          <label class="main-form__patronymic" for="patronymic">отчество*:</label>
+          <input type="text" name="name" value="Петр" id="name">
+          <input type="text" name="surname" value="Иванов" id="surname">
+          <input type="text" name="patronymic" value="Александрович" id="patronymic">
+    </div>
+    <div class="main-form__contact-form">
+      <label class="main-form__telephone" for="telephone">контактный телефон*:</label>
+        <label class="main-form__surname" for="email">электронная почта*:</label>
+        <input type="text" name="telephone" value="Введите телефон" id="telephone">
+        <input type="text" name="email" value="Введите e-mail" id="email">
+    </div>
+  </div>
+  <div class="main-form__experience">
+    <fieldset>
+      <legend>ваше общее впечатление</legend>
+      <input class="main-form-experience__radio" type="radio" name="experience" id="positive-experience" checked>
+      <label for="positive-experience">Скорее положительное</label>
+      <input class="main-form-experience__radio" type="radio" name="experience" id="negative-experience">
+      <label for="negative-experience">Скорее отрицательное</label>
+      <input class="main-form-experience__radio" type="radio" name="experience" id="obstructed">
+      <label for="obstructed">Затрудняюсь ответить</label>
+    </fieldset>
+  </div>
+  <div class="main-form__visited">
+    <fieldset>
+      <legend>посещенные достопримечательности</legend>
+      <input class="main-form-visited__checkbox" type="checkbox" name="devils bridge" id="devils-bridge" checked>
+      <label for="devils-bridge">Мост дьявола</label>
+      <input class="main-form-visited__checkbox" type="checkbox" name="mountain" id="mountain" checked>
+      <label for="mountain">Гора-Колокол</label>
+      <input class="main-form-visited__checkbox" type="checkbox" name="park" id="park" checked>
+      <label for="park">Слайд-парк</label>
+      <input class="main-form-visited__checkbox" type="checkbox" name="rocks" id="rocks" >
+      <label for="rocks">Красные скалы</label>
+
+    </fieldset>
+  </div>
+  <div class="main-form__comment">
+    <span>опишите свои эмоции</span>
+    <blockquote class="main-form__text-comment">
+      <p>опишите подробно все свои восторги</p>
+</blockquote>
+    </div>
+    <button class="button-feedback" type="submit">отправить отзыв</button>
+    <div class="main-form__modal main-form__modal--enabled">
+      <p>что то пошло не так!</p>
+      <span>проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</span>
+      <button class="main-form__modal-button" type="reset">ок</button>
+    </div>
+
+</form>
+
+
+
+</div>
+      </main>
+      <footer class="footer">
+        <div class="footer__link">
+          <a href="blank.html">#visitsedona</a>
+        </div>
+        <div class="footer__social">
+            <a class="footer__social--button" href="blank.html">twitter</a>
+            <a class="footer__social--button" href="blank.html">facebook</a>
+            <a class="footer__social--button" href="blank.html">youtube</a>
+
+
+
+        </div>
+        <div class="footer-logo">
+          <a class="footer-logo__text" href="blank.html">разработано</a>
+          <a href="blank.html" class="footer-logo__img">
+            <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
+            </svg></a>
+
+        </div>
+              </footer>
+            </body>
