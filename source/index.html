@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head class="head">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet">
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body class="page__body">
+  <body class="page-body">
       <header class="page-header">
-        <a href="" class="page-header__logo"><img src="img/mobile-logo.svg" alt="Логотип седона">
+        <a href="" class="page-header__logo">
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -19,7 +21,7 @@
               </li>
               <li class="site-list__item site-list__item--active">
                 <a href="catalog.html">
-                  фото видео
+                  фото и видео
                 </a>
               </li>
               <li class="site-list__item site-list__item--active">
@@ -38,48 +40,52 @@
       </header>
       <main class="page-main">
         <section class="title-img">
-          <h2>Добро пожаловать в седону</h2>
-          <img src="img/background-img.jpg" width="1200" height="518" alt="горы">
-          <img class="welcome-svg" src="img/welcome.svg" width="188" height="45" alt="welcome">
-          <img class="gorgeous-svg" src="img/gorgeous.svg" width="256" height="29" alt="to the gogeous">
-          <img class="sedona-svg" src="img/sedona.svg" width="457" height="213" alt="sedona">
-          <img class="sedona-svg" src="img/grand-canyon.svg" width="283" height="75" alt="Welcome to the gorgerous Sedona because the grand canyon sucks">
+          <h2 class="visually-hidden">Добро пожаловать в седону</h2>
+          <!-- <img src="img/background-img.jpg" width="1200" height="518" alt="горы"> -->
+          <!-- <img class="welcome-svg" src="img/welcome.svg" width="188" height="45" alt="welcome"> -->
+          <!-- <img class="gorgeous-svg" src="img/gorgeous.svg" width="256" height="29" alt="to the gogeous"> -->
+          <!-- <img class="sedona-svg" src="img/sedona.svg" width="457" height="213" alt="sedona"> -->
+          <!-- <img class="sedona-svg" src="img/grand-canyon.svg" width="283" height="75" alt="Welcome to the gorgerous Sedona because the grand canyon sucks"> -->
         </section>
         <div class="slogan-site">
-          <span class="slogan-site__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</span>
-          <span class="slogan-site__advantages">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</span>
+          <div class="slogan-site__title">
+          <span>Седона — небольшой городок в Аризоне, заслуживающий большего!</span>
+          </div>
+          <div class="slogan-site__advantages">
+            <span>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</span>
+          </div>
         </div>
         <div class="block-l">
           <div class="block-l__text">
-            <h1 class="block-l__title">
+            <p class="block-l__title">
               Настоящий городок
-            </h1>
+            </p>
             <p class="block-l__slogan">№1 седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="block-l__img">
-            <img src="img/sedona-photo.jpg" width="512" height="256" alt="фото города">
+            <!-- <img src="img/sedona-photo.jpg" width="800" height="256" alt="фото города"> -->
           </div>
         </div>
         <div class="occupation-list">
           <div class="occupation-list__occupation-item">
-            <img class="occupation-list__occupation-item-svg" src="img/icon-house.svg"  alt="Домик">
+            <!-- <img class="occupation-list__occupation-item-svg" src="img/icon-house.svg"  alt="Домик"> -->
             <h2>жилье</h2>
             <p>рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
           <div class="occupation-list__occupation-item">
-            <img class="occupation-list__occupation-item-svg" src="img/icon-burger.svg" alt="Бургер">
+            <!-- <img class="occupation-list__occupation-item-svg" src="img/icon-burger.svg" alt="Бургер"> -->
             <h2>Еда</h2>
             <p>всегда заказывайте фиремнный бургер, вы не разочаруетесь!</p>
           </div>
           <div class="occupation-list__occupation-item">
-            <img class="occupation-list__occupation-item-svg" src="img/icon-gift.svg" alt="Подарок">
+            <!-- <img class="occupation-list__occupation-item-svg" src="img/icon-gift.svg" alt="Подарок"> -->
             <h2>сувениры</h2>
             <p>не только китайского, но и местного производства</p>
           </div>
         </div>
         <div class="block-r">
           <div class="block-r__img">
-            <img src="img/devil-brige.jpg" width="512" height="256" alt="Мост дьявола">
+
           </div>
           <div class="block-r__text">
             <h1 class="block-r__title">
@@ -93,11 +99,11 @@
             <h2>небольшая площадь</h2>
             <p>№3 все места находятся очень близко</p>
           </div>
-          <div class="occupation-list__occupation-item">
+          <div class="advantages-list__advantages-item">
             <h2>красивая дорога</h2>
             <p>ехать в сторону из лас вегаса совсем не скучно!</p>
           </div>
-          <div class="occupation-list__occupation-item">
+          <div class="advantages-list__advantages-item">
             <h2>мало туристов</h2>
             <p>большинство едет в гранд каньон и толпиться там</p>
           </div>
@@ -113,7 +119,7 @@
           <img src="img/map.jpg" alt="Карта">
         </div>
       </main>
-      <footer class="footer">
+      <footer class="page-footer">
         <div class="footer__link">
           <a href="blank.html">#visitsedona</a>
         </div>
@@ -132,27 +138,3 @@
       </footer>
     </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
