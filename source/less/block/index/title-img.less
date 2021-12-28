@@ -1,10 +1,19 @@
 .title-img {
   background-image: url("./../../img/background-img.jpg");
   background-color: #ffffff;
-  width: 1200px;
-  height: 518px;
+  height: 332px;
+  min-width: 320px;
   outline: 5px solid #eeff00;
   outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    height: 518px;
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 518px;
+  }
 }
 
 .visually-hidden {

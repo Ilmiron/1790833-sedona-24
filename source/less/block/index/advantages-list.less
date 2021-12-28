@@ -1,10 +1,30 @@
+
 .advantages-list {
+  min-width: 320px;
+  height: 503px;
   background-color: #eeeeee;
-  display: flex;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr, 1fr, 1fr;
   outline: 5px solid #33ff00;
   outline-offset: -5px;
-  padding-top: 43px;
-  padding-bottom: 62px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-auto-flow: column;
+    height: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-auto-flow: column;
+    height: 256px;
+  }
+}
+
+.advantages-list__advantages-item {
+  padding-left: 42px;
+  padding-right: 41px;
 }
 
 .advantages-list__advantages-item h2 {

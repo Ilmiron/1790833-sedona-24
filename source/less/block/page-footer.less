@@ -1,8 +1,24 @@
 .page-footer {
-  background-color: #ffffff;
-  padding-top: 36px;
-  padding-bottom: 36px;
+  min-width: 320px;
+  height: 233px;
+  padding-top: 10px;
   display: flex;
-  outline: 5px solid #ff0095c7;
-  outline-offset: -5px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  // outline: 5px solid #ff0095c7;
+  // outline-offset: -5px;
+  @media (min-width: @tablet-width) {
+    height: 120px;
+    flex-direction: row;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 120px;
+    flex-direction: row;
+  }
+}
+
+.footer__social {
+  display: flex;
 }

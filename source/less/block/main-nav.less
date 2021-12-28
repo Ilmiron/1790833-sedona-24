@@ -1,24 +1,42 @@
 
 .main-nav {
+
+  font-family: "ptsansbold", sans-serif;
   outline: 5px solid #ff0000;
   outline-offset: -5px;
-  width: 1200px;
-  height: 56px;
-  font-family: "ptsansbold", sans-serif;
+  height: 223px;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    height: 56px;
+    width: 100%;
+  }
 }
 
 .main-nav__list {
   list-style: none;
-  display: flex;
-  justify-content: space-evenly;
   margin: 0;
   padding: 0;
+  min-width: 320px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .site-list__item a {
   text-decoration: none;
   color: #000000;
-  font-size: 14 px;
+  font-size: 14px;
   line-height: 26px;
+  margin-left: 10px;
 }
-

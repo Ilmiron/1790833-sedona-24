@@ -1,7 +1,23 @@
+
 .page-header {
   outline: 5px solid #ff0000a9;
   outline-offset: -5px;
   background-color: #ffffff;
+  min-width: 320px;
+  display: flex;
+}
+
+.page-header__logo {
+  height: 85px;
+  position: absolute;
+  left: 35%;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: 42%;
+    display: block;
+  }
 }
 
 .visually-hidden {

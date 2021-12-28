@@ -1,40 +1,45 @@
 
-
 .block-l {
+  min-width: 320px;
   display: flex;
-  width: 1200px;
-  height: 256px;
+  flex-direction: column;
   outline: 5px solid #ffee00;
   outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
-
-.block-l__img {
-
-  background-image: url("./../../img/sedona-photo.jpg");
-  background-repeat: no-repeat;
-  width: 800px;
-  height: 256px;
-}
-
 
 .block-l__text {
-
   background-color: #81b3d2;
-  width: 400px;
-  height: 256px;
   font-family: "ptsans", sans-serif;
   font-size: 14px;
   line-height: 21px;
+
+  @media (min-width: @desktop-width) {
+    width: 33%;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 33%;
+  }
 }
 
 .block-l__title {
-
   font-family: "ptsansbold", sans-serif;
   color: #ffffff;
   font-size: 21px;
   line-height: 26px;
   padding: 0;
   margin: 0;
+  padding-top: 55px;
   text-align: center;
 }
 
@@ -44,4 +49,15 @@
   line-height: 21px;
   font-weight: 400;
   text-align: center;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 39px;
+}
+
+.block-l__img {
+  outline: 5px solid #eeff00;
+  outline-offset: -5px;
+  background-image: url("./../../img/sedona-photo.jpg");
+  height: 260px;
+  background-repeat: no-repeat;
 }

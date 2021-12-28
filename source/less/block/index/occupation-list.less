@@ -1,10 +1,22 @@
 .occupation-list {
+  min-width: 320px;
+  width: 100%;
+  height: 416px;
   display: flex;
+  flex-direction: column;
   background-color: #ffffff;
   outline: 5px solid #5eff00;
   outline-offset: -5px;
-  padding-top: 159px;
-  padding-bottom: 80px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-rows: 1fr, 1fr, 1fr;
+  }
 }
 
 .occupation-list__occupation-item h2 {
@@ -13,10 +25,16 @@
   line-height: 26px;
   padding: 0;
   margin: 0;
+  padding-top: 35px;
+  padding-left: 75px;
 }
 
 .occupation-list__occupation-item p {
   font-family: "ptsans", sans-serif;
   font-size: 14px;
   line-height: 21px;
+  padding: 0;
+  margin: 0;
+  padding-left: 75px;
+  padding-right: 50px;
 }

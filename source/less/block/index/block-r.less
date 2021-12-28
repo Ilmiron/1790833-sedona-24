@@ -1,35 +1,59 @@
 .block-r {
+  min-width: 320px;
   display: flex;
-  width: 1200px;
-  height: 256px;
-  outline: 5px solid #00e1ff;
+  flex-direction: column;
+  outline: 5px solid #ffee00;
   outline-offset: -5px;
-}
 
-.block-r__img {
-
-  background-image: url("./../../../img/canyon-photo.jpg");
-  background-repeat: no-repeat;
-  width: 800px;
-  height: 256px;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .block-r__text {
   background-color: #81b3d2;
-  width: 400px;
-  height: 256px;
-}
-
-.block-r__title {
-  color: #ffffff;
-  font-family: "ptsansbold", sans-serif;
-  font-size: 21px;
-  line-height: 21px;
-}
-
-.block-l__slogan {
-  color: #ffffff;
   font-family: "ptsans", sans-serif;
   font-size: 14px;
   line-height: 21px;
+  order: 1;
+
+  @media (min-width: @desktop-width) {
+    width: 33%;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 33%;
+  }
+}
+
+.block-r__title {
+  font-family: "ptsansbold", sans-serif;
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 26px;
+  padding: 0;
+  margin: 0;
+  padding-top: 55px;
+  text-align: center;
+}
+
+.block-r__slogan {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 39px;
+}
+
+.block-r__img {
+  outline: 5px solid #eeff00;
+  outline-offset: -5px;
+  background-image: url("./../../../img/canyon-photo.jpg");
+  height: 260px;
+  background-repeat: no-repeat;
+  order: 2;
 }
